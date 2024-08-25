@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c2ddef;
+    background-image: url('images/bg6.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+.category, .diff {
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.category:hover, .diff:hover {
+    background-color: #f2bb05;
+}
+
+.category img, .diff img {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+}

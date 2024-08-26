@@ -8,7 +8,8 @@ INSERT INTO categories (id, cat_name) VALUES
 (4, 'Data Structures and Algorithms'),
 (5, 'Design and Analysis of Algorithms'),
 (6, 'C++ Programming'),
-(7, 'C Programming');
+(7, 'C Programming'),
+(8,'Object-Oriented Programming');
 
 
 
@@ -179,3 +180,71 @@ INSERT INTO questions (question_text, category_id, correct_option, option1, opti
 ('What is a recursive function in C?', 7, 'A function that calls itself', 'A function that calls itself', 'A function that returns a pointer', 'A function that takes a pointer as an argument', 'A function that calls another function'),
 ('What is the difference between "break" and "continue" statements in C?', 7, 'The "break" statement terminates the loop, while the "continue" statement skips the current iteration and continues with the next iteration', 'The "break" statement terminates the loop, while the "continue" statement skips the current iteration and continues with the next iteration', 'The "continue" statement terminates the loop, while the "break" statement skips the current iteration', 'There is no difference', 'Both statements are used to terminate the loop'),
 ('Which of the following is true about a function pointer in C?', 7, 'It is a pointer that points to a function', 'It is a pointer that points to a function', 'It is a pointer that points to a variable', 'It is a function that returns a pointer', 'It is a function that takes a pointer as an argument');
+
+INSERT INTO questions (question_text, category_id, correct_option, option1, option2, option3, option4) 
+VALUES 
+('What does OOP stand for?', 8, 'Object-Oriented Programming', 'Object-Oriented Programming', 'Object Oriented Procedure', 'Objective Operations Processing', 'Object-Oriented Procedure'),
+('Which of the following is not an OOP concept?', 8, 'Compilation', 'Encapsulation', 'Compilation', 'Inheritance', 'Polymorphism'),
+('Which feature of OOP provides the idea of reusability?', 8, 'Inheritance', 'Inheritance', 'Abstraction', 'Encapsulation', 'Polymorphism'),
+('Which of the following is used to achieve runtime polymorphism?', 8, 'Method Overriding', 'Method Overloading', 'Method Overriding', 'Constructor Overloading', 'Function Overloading'),
+('Which OOP concept is often compared to a blueprint?', 8, 'Class', 'Object', 'Function', 'Class', 'Inheritance'),
+('Which term is used to describe the ability to take many forms in OOP?', 8, 'Polymorphism', 'Encapsulation', 'Polymorphism', 'Inheritance', 'Abstraction'),
+('Which feature allows for hiding the internal implementation details?', 8, 'Encapsulation', 'Inheritance', 'Encapsulation', 'Polymorphism', 'Abstraction'),
+('In OOP, what is used to bind data and functions together?', 8, 'Class', 'Object', 'Class', 'Method', 'Inheritance'),
+('Which of the following is an example of an access specifier?', 8, 'private', 'void', 'int', 'public', 'private'),
+('Which concept refers to the design of objects in classes?', 8, 'Encapsulation', 'Abstraction', 'Encapsulation', 'Polymorphism', 'Inheritance'),
+
+('Which is the default access specifier in a class?', 8, 'private', 'public', 'private', 'protected', 'internal'),
+('What is the process of defining multiple methods with the same name but different parameters?', 8, 'Overloading', 'Overloading', 'Overriding', 'Encapsulation', 'Inheritance'),
+('What does the keyword `this` refer to in OOP?', 8, 'Current object', 'Super class', 'Parent class', 'Global variable', 'Current object'),
+('Which OOP principle focuses on hiding the complexity of a system?', 8, 'Abstraction', 'Encapsulation', 'Polymorphism', 'Inheritance', 'Abstraction'),
+('Which keyword is used to prevent a class from being inherited?', 8, 'final', 'static', 'final', 'abstract', 'protected'),
+('Which method is called when an object is created?', 8, 'Constructor', 'Constructor', 'Destructor', 'Overloaded function', 'Static method'),
+('What is the term for a function defined inside a class?', 8, 'Method', 'Procedure', 'Method', 'Constructor', 'Operator'),
+('Which of the following allows objects to interact with each other?', 8, 'Methods', 'Constructors', 'Methods', 'Attributes', 'Events'),
+('What is called when a child class provides a specific implementation of a method already defined in its parent class?', 8, 'Overriding', 'Overloading', 'Overriding', 'Abstracting', 'Encapsulation'),
+('What OOP principle is demonstrated by the statement `a Circle is a Shape`?', 8, 'Inheritance', 'Polymorphism', 'Encapsulation', 'Inheritance', 'Abstraction'),
+
+('Which OOP concept ensures that only the relevant details are shown to the user?', 8, 'Abstraction', 'Abstraction', 'Inheritance', 'Encapsulation', 'Polymorphism'),
+('What is the relationship between a base class and a derived class?', 8, 'Inheritance', 'Composition', 'Aggregation', 'Inheritance', 'Polymorphism'),
+('What type of relationship does composition represent?', 8, 'Has-a', 'Is-a', 'Has-a', 'Uses', 'Belongs-to'),
+('Which of the following is not a type of inheritance?', 8, 'Sequential', 'Single', 'Multiple', 'Multilevel', 'Sequential'),
+('What is it called when an object has multiple forms?', 8, 'Polymorphism', 'Encapsulation', 'Polymorphism', 'Inheritance', 'Abstraction'),
+('Which OOP feature provides a way to perform a single action in different ways?', 8, 'Polymorphism', 'Inheritance', 'Polymorphism', 'Encapsulation', 'Abstraction'),
+('Which keyword is used to inherit from a base class in Java?', 8, 'extends', 'implements', 'extends', 'inherits', 'derived'),
+('What is the return type of a constructor in Java?', 8, 'No return type', 'void', 'int', 'double', 'No return type'),
+('Which OOP concept focuses on separating an object’s interface from its implementation?', 8, 'Abstraction', 'Encapsulation', 'Inheritance', 'Polymorphism', 'Abstraction'),
+('In OOP, what do you call a function that is called automatically when an object is destroyed?', 8, 'Destructor', 'Constructor', 'Destructor', 'Finalizer', 'Deinitializer'),
+
+('Which method in a class must be implemented when an interface is used?', 8, 'All methods', 'Constructor', 'Destructor', 'All methods', 'Main method'),
+('What does the `super` keyword refer to?', 8, 'Parent class', 'Current class', 'Child class', 'Global class', 'Parent class'),
+('Which concept allows you to define a function in a child class that has the same name as one in the parent class?', 8, 'Overriding', 'Overloading', 'Encapsulation', 'Overriding', 'Inheritance'),
+('Which of the following is not a benefit of using OOP?', 8, 'Faster execution', 'Code reusability', 'Data encapsulation', 'Faster execution', 'Modularity'),
+('Which concept is related to controlling access to class members?', 8, 'Encapsulation', 'Inheritance', 'Abstraction', 'Encapsulation', 'Polymorphism'),
+('Which keyword in C++ is used to inherit a class?', 8, 'public', 'public', 'private', 'protected', 'extends'),
+('What is the primary purpose of encapsulation?', 8, 'To protect data', 'To protect data', 'To perform inheritance', 'To achieve polymorphism', 'To hide complexity'),
+('In which phase of SDLC does object-oriented analysis take place?', 8, 'Analysis', 'Design', 'Analysis', 'Implementation', 'Testing'),
+('Which method signature is correct for a destructor in C++?', 8, '~ClassName()', '~ClassName()', 'ClassName()', 'void ~ClassName()', 'ClassName~()'),
+('Which is a real-world example of abstraction?', 8, 'Driving a car', 'Inheritance', 'Polymorphism', 'Driving a car', 'Method Overloading'),
+
+('What is the output of `sizeof` operator in C++ when applied to an empty class?', 8, '8', '0', '4', '8', '8'),
+('Which function is used to dynamically allocate memory in C++?', 8, 'new', 'malloc', 'calloc', 'new', 'realloc'),
+('Which OOP concept is applied when creating an object from a class?', 8, 'Instantiation', 'Inheritance', 'Instantiation', 'Encapsulation', 'Abstraction'),
+('Which of these is an example of method overloading?', 8, 'Same method name, different parameters', 'Different method names', 'Same method name, same parameters', 'Same method name, different parameters', 'Same return type'),
+('Which keyword is used to make a member variable constant in C++?', 8, 'const', 'constant', 'const', 'final', 'static'),
+('Which OOP concept allows for treating objects of different classes as objects of a common super class?', 8, 'Polymorphism', 'Encapsulation', 'Polymorphism', 'Inheritance', 'Abstraction'),
+('What is the default visibility of class members in C++?', 8, 'private', 'public', 'protected', 'private', 'internal'),
+('What type of inheritance does not exist in C++?', 8, 'Hybrid', 'Single', 'Multilevel', 'Multiple', 'Hybrid'),
+('Which OOP principle is violated when a child class has more than one parent class?', 8, 'Single Inheritance', 'Multiple Inheritance', 'Single Inheritance', 'Polymorphism', 'Encapsulation'),
+('Which keyword is used in Java to prevent a method from being overridden?', 8, 'final', 'static', 'final', 'private', 'protected'),
+
+('In which language was the concept of OOP first introduced?', 8, 'Simula', 'Java', 'C++', 'Simula', 'Smalltalk'),
+('What is it called when a class can extend another class?', 8, 'Inheritance', 'Encapsulation', 'Inheritance', 'Polymorphism', 'Abstraction'),
+('Which of the following best describes an abstract class?', 8, 'A class that cannot be instantiated', 'A class that cannot be inherited', 'A class that cannot be instantiated', 'A class without methods', 'A class with private members only'),
+('What does overriding a method in OOP allow you to do?', 8, 'Change the implementation of a method in a subclass', 'Create a method with the same name', 'Change the implementation of a method in a superclass', 'Change the implementation of a method in a subclass', 'Use multiple constructors'),
+('Which of the following statements is true about constructors?', 8, 'Constructors can be overloaded', 'Constructors cannot have a return type', 'Constructors can be overloaded', 'Constructors are inherited', 'Constructors cannot accept parameters'),
+('What is the output of calling a destructor in C++?', 8, 'Resource deallocation', 'Object creation', 'Function termination', 'Resource deallocation', 'Memory allocation'),
+('Which of the following is a benefit of using interfaces in Java?', 8, 'Multiple inheritance', 'Multiple inheritance', 'Memory management', 'Encapsulation', 'Runtime polymorphism'),
+('Which feature of OOP helps to hide the internal details of an object?', 8, 'Encapsulation', 'Inheritance', 'Encapsulation', 'Polymorphism', 'Abstraction'),
+('What is the result of using the `delete` operator in C++?', 8, 'Deallocates memory', 'Creates an object', 'Initializes a variable', 'Deallocates memory', 'Releases a lock'),
+('Which keyword is used in C++ to define a block of code as critical?', 8, 'lock', 'synchronized', 'lock', 'protected', 'critical');

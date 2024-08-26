@@ -42,8 +42,7 @@ app.get('/categories', (req, res) => {
 // Define endpoint to fetch questions
 app.get('/questions', (req, res) => {
     const categoryId = req.query.categoryId;
-    const query = 'SELECT * FROM questions WHERE category_id = ?';
-    
+    const query = 'SELECT * FROM questions WHERE category_id = ? order by rand()';
     connection.query(query, [categoryId], (error, results) => {
         if (error) {
             console.error('Error fetching questions:', error);
